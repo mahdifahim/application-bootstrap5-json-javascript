@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>task java, boot strap ,json</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css">
+
+</head>
+
+<body style="background-color: #f7f7e8;">
+    <!-- Start menue button-->
+<div class="container">
+<div class="menu" dir="rtl"> 
+    <button id="entering" >entering info </button> 
+    <button id="buttongetinfo">get info with api </button> 
+    <button id="buttonsetinfo">set info with api </button> 
+    
+</div>
+</div>
+<hr>
+<!-- End menu button-->
+<!-- Start set Info-->
+
+<div class=" set-info container" id="setinfo" dir="rtl">      
+ <div class="input-group mb-3 "  >
+    <div class="input-group-prepend">
+      <span class="input-group-text" >إسم المستخدم</span>
+    </div>
+    <input type="text" id="inputnameset" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" >
+  </div>
+  
+  <div class="input-group mb-3">
+    <textarea  id="inputtextset" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" ></textarea>
+    <div class="input-group-append">
+      <span class="input-group-text" id="basic-addon2">نبذة مختصرة عن المستخدم</span>
+        </div>
+  </div>
+    <button type="button" id="setjson" style="text-align: center; ">    إدخال المعلومات</button>
+</div>
+ <!-- End set Info-->
+ <!-- Start Get Info-->
+<div class="get-info container " id="getinfo">
+    <div class="row">
+        <div class="col-12">
+            <table id="example" class="table table-striped" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                       
+                    </tr>
+                </thead>
+               
+                <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                      
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    </div>
+     <!-- End get Info-->
+    
+ <!-- Start Input Ifo-->
+<div class="container input-info" dir="rtl" id="inputentering"> 
+    <div class="row">      
+        <div class="col-md-9" >
+    
+ <div class="input-group mb-3 " dir="rtl" >
+    <div class="input-group-prepend">
+      <span class="input-group-text" >إسم المستخدم</span>
+    </div>
+    <input type="text" id="inputname" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" >
+  </div>
+  
+  <div class="input-group mb-3">
+    <textarea  id="inputtext" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" ></textarea>
+    <div class="input-group-append">
+      <span class="input-group-text" id="basic-addon2">نبذة مختصرة عن المستخدم</span>
+    </div>
+  </div>
+  
+  <label for="basic-url">معلومات الاتصال</label>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon3">الايميل الخاص بالمستخدم</span>
+    </div>
+    <input type="email" id="inputemail"  class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  </div>
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">رقم الهاتف</span>
+    </div>
+    <input  type="tel" id="inputphon" class="form-control" >  
+  </div>
+  
+  <div class="input-group mb-3">
+        <input type="file"   id="inputimages"    accept="image/png, image/jpeg" class="input-file"  />  
+        <div>  <button type="button" id="inputinfo" style="text-align: center;"> 
+        إدخال المعلومات</button></div>
+  </div>
+
+        </div>
+   
+        <!-- End Input Info-->
+        <!-- Start Info user-->
+        <div class="set-card col-md-3" id="card">
+            <div class="card" style="width: 18rem;">
+                <img src="#" class="card-img-top" alt="..." id="inputimage"  >
+                <div class="card-body">
+                  <h5 class="card-name" id="settname">إسم المستخدم</h5>
+                  <p class="card-text" id="settext">نبذة مختصرة</p>
+                </div>
+                <div >
+                  <p  class="card-email-one " >البريدالألكتروني:<span class="card-email " id="setemail"></span> </p>
+                  <p  class="card-phon-one" > رقم الهاتف:<span class="card-phon" id="setphon"></span> </p>  
+               
+        </div>
+    </div>
+</div>
+
+
+<script src="js/mainhome.js"></script>
+<script src="js/jquery-git.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.bootstrap5.min.js"></script>
+<script src="js/table.js"></script>
+<script src="js/main.json"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+    
+</html>
